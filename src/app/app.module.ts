@@ -10,6 +10,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
+import { BlogService } from './Services/Games/blog.service';
+import { BlogModule } from './blog/blog.module';
 
 @NgModule({
   declarations: [
@@ -26,8 +28,9 @@ import { ContactComponent } from './contact/contact.component';
     MatToolbarModule,
     MatIconModule,
     HttpClientModule,
+    BlogModule,
   ],
-  providers: [],
+  providers: [BlogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
