@@ -9,9 +9,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
@@ -19,9 +16,6 @@ import { ContactComponent } from './contact/contact.component';
     AppComponent,
     AboutComponent,
     PageNotFoundComponent,
-    HomeComponent,
-    PortfolioComponent,
-    BlogComponent,
     ContactComponent
   ],
   imports: [

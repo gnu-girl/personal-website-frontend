@@ -1,0 +1,5 @@
+## Angular ignore files
+node_modules
+.angular
+package-lock.json
+
