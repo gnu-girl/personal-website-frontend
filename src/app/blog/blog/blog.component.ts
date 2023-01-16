@@ -29,6 +29,10 @@ export class BlogComponent implements OnInit {
     console.log("FFFF", this.hand);
     return this.hand
   }
+
+  newPost() {
+    this.blogSvc.newPost().subscribe();
+  }
   /* Private Methods */
 
 }
