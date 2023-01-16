@@ -39,6 +39,7 @@ export class BlogService {
     body.append('author', 'Anita Slater');
     body.append('body', 'catscatscatscatscatscatscatscatscatscatscats');
     body.append('title', 'HINKKINNKN');
+    body.append('draft', 'false');
 
     return this.http.post<Post>(backendUrl+"/blog/newPost",body,{headers:headers});
   }
