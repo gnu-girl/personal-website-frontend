@@ -12,13 +12,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactComponent } from './contact/contact.component';
 import { BlogService } from './Services/Games/blog.service';
 import { BlogModule } from './blog/blog.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     PageNotFoundComponent,
-    ContactComponent
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule,
