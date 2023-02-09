@@ -1,4 +1,4 @@
-# gnu-girl.com front End
+# gnu-girl.com
 
 This code will *eventually* serve as the front end for the `gnu-girl.com` website.
 
