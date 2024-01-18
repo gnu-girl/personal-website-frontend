@@ -1,10 +1,37 @@
-<mat-toolbar class="place-content-end space-x-5">
-  <a 
+<mat-toolbar class="place-content-end space-x-5 text-5xl text-neutral ">
+  <button
+    routerLink="/about"
+    routerLinkActive="text-complementary"
+    aria-label="About"
+    class="p-2"
+  >
+    About
+  </button>
+  <button
+    routerLink="/projects"
+    routerLinkActive="text-complementary"
+    aria-label="Projects"
+    class="p-2"
+  >
+    Projects
+  </button>
+  <button 
+    routerLink="/home" 
+    routerLinkActive="text-complementary"
+    aria-label="Home"
+    class="p-2"
+    >
+    Home
+  </button>
+  <!-- <a 
     class="button" 
     routerLink="/home"
     routerLinkActive="activebutton"
     aria-label="Home"
-    ariaCurrentWhenActive="page">Home
+    ariaCurrentWhenActive="page">
+      <div class="text-3xl text-neutral font-bold underline bg-highlight">
+        ChitChat
+      </div>
   </a>
   <a 
     class="button" 
@@ -33,7 +60,10 @@
   routerLinkActive="activebutton"
   aria-label="Contact"
   ariaCurrentWhenActive="page"> Contact
-</a>
-
+</a> -->
 </mat-toolbar>
 <router-outlet></router-outlet>
+
+<h1 class="font-serif text-3xl font-bold underline">
+  Whereas recognition of the inherent dignity
+</h1>

@@ -13,6 +13,9 @@ import { ContactComponent } from './contact/contact.component';
 import { BlogService } from './Services/Games/blog.service';
 import { BlogModule } from './blog/blog.module';
 import { HomeComponent } from './home/home.component';
+import { GgLabelTitleComponent } from './common/gg-label/gg-label-title/gg-label-title.component';
+import { GgLabelCaptionComponent } from './common/gg-label/gg-label-caption/gg-label-caption.component';
+import { GgLabelComponent } from './common/gg-label/gg-label.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     PageNotFoundComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    GgLabelTitleComponent,
+    GgLabelCaptionComponent,
+    GgLabelComponent,
   ],
   imports: [
     RouterModule,

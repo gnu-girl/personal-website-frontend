@@ -2,8 +2,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import '~@angular/material/theming';
 
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Courier Prime', monospace; }
+/* html, body { height: 100%; } */
