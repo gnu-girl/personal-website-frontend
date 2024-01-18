@@ -1,69 +1,37 @@
-<mat-toolbar class="place-content-end space-x-5 text-5xl text-neutral ">
-  <button
-    routerLink="/about"
-    routerLinkActive="text-complementary"
-    aria-label="About"
-    class="p-2"
+<div class="flex flex-row px-24 py-2">
+  <gg-label
+    title="Anita Slater"
+    caption="cats cats cats cats cats"
+    class="basis-1/2"
   >
-    About
-  </button>
-  <button
-    routerLink="/projects"
-    routerLinkActive="text-complementary"
-    aria-label="Projects"
-    class="p-2"
+  </gg-label>
+  <mat-toolbar
+    class="basis-1/2 place-content-end space-x-5 text-5xl text-neutral"
   >
-    Projects
-  </button>
-  <button 
-    routerLink="/home" 
-    routerLinkActive="text-complementary"
-    aria-label="Home"
-    class="p-2"
+    <button
+      routerLink="/about"
+      routerLinkActive="text-complementary"
+      aria-label="About"
+      class="p-2"
     >
-    Home
-  </button>
-  <!-- <a 
-    class="button" 
-    routerLink="/home"
-    routerLinkActive="activebutton"
-    aria-label="Home"
-    ariaCurrentWhenActive="page">
-      <div class="text-3xl text-neutral font-bold underline bg-highlight">
-        ChitChat
-      </div>
-  </a>
-  <a 
-    class="button" 
-    routerLink="/about"
-    routerLinkActive="activebutton"
-    aria-label="About"
-    ariaCurrentWhenActive="page">About
-  </a>
-  <a 
-    class="button" 
-    routerLink="/portfolio"
-    routerLinkActive="activebutton"
-    aria-label="Portfolio"
-    ariaCurrentWhenActive="page">Portfolio
-  </a>
-  <a 
-    class="button" 
-    routerLink="/blog"
-    routerLinkActive="activebutton"
-    aria-label="Blog"
-    ariaCurrentWhenActive="page"> Blog
-  </a>
-  <a 
-  class="contact" 
-  routerLink="/contact"
-  routerLinkActive="activebutton"
-  aria-label="Contact"
-  ariaCurrentWhenActive="page"> Contact
-</a> -->
-</mat-toolbar>
+      About
+    </button>
+    <button
+      routerLink="/projects"
+      routerLinkActive="text-complementary"
+      aria-label="Projects"
+      class="p-2"
+    >
+      Projects
+    </button>
+    <button
+      routerLink="/home"
+      routerLinkActive="text-complementary"
+      aria-label="Home"
+      class="p-2"
+    >
+      Home
+    </button>
+  </mat-toolbar>
+</div>
 <router-outlet></router-outlet>
-
-<h1 class="font-serif text-3xl font-bold underline">
-  Whereas recognition of the inherent dignity
-</h1>

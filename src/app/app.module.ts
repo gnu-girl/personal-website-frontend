@@ -7,26 +7,27 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ContactComponent } from './contact/contact.component';
-import { BlogService } from './Services/Games/blog.service';
-import { BlogModule } from './blog/blog.module';
 import { HomeComponent } from './home/home.component';
 import { GgLabelTitleComponent } from './common/gg-label/gg-label-title/gg-label-title.component';
 import { GgLabelCaptionComponent } from './common/gg-label/gg-label-caption/gg-label-caption.component';
 import { GgLabelComponent } from './common/gg-label/gg-label.component';
+import { GgCardComponent } from './common/gg-card/gg-card.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     PageNotFoundComponent,
-    ContactComponent,
     HomeComponent,
     GgLabelTitleComponent,
     GgLabelCaptionComponent,
     GgLabelComponent,
+    ProjectsComponent,
+    GgCardComponent,
   ],
   imports: [
     RouterModule,
@@ -36,9 +37,9 @@ import { GgLabelComponent } from './common/gg-label/gg-label.component';
     MatToolbarModule,
     MatIconModule,
     HttpClientModule,
-    BlogModule,
+    MatCardModule
   ],
-  providers: [BlogService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
