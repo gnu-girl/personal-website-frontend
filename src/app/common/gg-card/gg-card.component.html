@@ -1,27 +1,14 @@
-<div class="w-full max-w-sm text-primary lg:flex lg:max-w-full">
-  <!-- todo: update alt text -->
-  <div
-    class="h-48 flex-none overflow-hidden rounded-t bg-cover text-center lg:h-auto lg:w-48 lg:rounded-l lg:rounded-t-none"
-    style="background-image: url(&quot;/assets/bg.jpg&quot;)"
-    title="picture"
-  ></div>
-  <div
-    class="lg:border-gray-400 flex flex-col justify-between rounded-b border-b border-l border-r border-complementary bg-neutral bg-opacity-15 p-4 leading-normal lg:rounded-b-none lg:rounded-r lg:border-l-0 lg:border-t"
-  >
-    <div class="mb-8">
-      <gg-label-title title="{{ cardTitle }}"></gg-label-title>
-      <gg-label-caption caption="{{ cardCaption }}"> </gg-label-caption>
+<div class="max-w-sm rounded overflow-hidden shadow-2xl bg-primary-light bg-opacity-5 text-neutral justify-end">
+    <img class="w-full" src="/assets/bg.jpg" alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <!-- <div class="font-bold text-xl mb-2">The Coldest Sunset</div> -->
+      <gg-label-title title="{{cardTitle}}"></gg-label-title>
+      <gg-label-caption caption="{{cardCaption}}"></gg-label-caption>
     </div>
-    <div class="flex items-center">
-      <img
-        class="mr-4 h-10 w-10 rounded-full"
-        src="/img/jonathan.jpg"
-        alt="Avatar of Jonathan Reinink"
-      />
-      <div class="text-sm">
-        <p class="text-gray-900 leading-none">Jonathan Reinink</p>
-        <p class="text-gray-600">Aug 18</p>
-      </div>
+    <div class="px-6 pt-4 pb-2 flex justify-end">
+        <button class="bg-primary-light hover:bg-neutral text-primary font-bold py-2 px-4 rounded inline-flex items-center">
+            <img class="w-4 h-4 mr-2" src="/assets/github-mark.svg">
+            <span>GitHub</span>
+          </button>
     </div>
   </div>
-</div>
