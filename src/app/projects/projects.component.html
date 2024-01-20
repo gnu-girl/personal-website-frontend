@@ -1,7 +1,17 @@
 <div class="container px-24">
-  <div class="flex flex-col justify-evenly py-10 ">
+  <div class="flex flex-col justify-evenly py-10">
     <div class="flex flex-row flex-wrap gap-5">
+      <!-- Show all projects as cards from db -->
       <gg-card
+        *ngFor="let project of projectList$ | async"
+        [cardTitle]="project.title"
+        [cardCaption]="project.description"
+      ></gg-card>
+      <!-- <gg-card
+        [cardTitle]="project$.title"
+        [cardCaption]="project$.description"
+      ></gg-card> -->
+      <!-- <gg-card
         cardTitle="Can coffee make you a better developer?"
         cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
       ></gg-card>
@@ -28,11 +38,7 @@
       <gg-card
         cardTitle="Can coffee make you a better developer?"
         cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
-      <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
+      ></gg-card> -->
     </div>
   </div>
 </div>

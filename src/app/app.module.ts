@@ -16,6 +16,7 @@ import { GgLabelCaptionComponent } from './common/gg-label/gg-label-caption/gg-l
 import { GgLabelComponent } from './common/gg-label/gg-label.component';
 import { GgCardComponent } from './common/gg-card/gg-card.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ProjectService } from './Services/projects.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,9 @@ import { ProjectsComponent } from './projects/projects.component';
     HttpClientModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [
+    ProjectService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
