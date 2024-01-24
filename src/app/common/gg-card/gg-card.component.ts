@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ProjectService } from 'src/app/Services/projects.service';
 
 @Component({
   selector: 'gg-card',
@@ -9,13 +10,14 @@ export class GgCardComponent implements OnInit {
 
   @Input() cardTitle = "";
   @Input() cardCaption = "";
+  @Input() cardId = 0;
 
-  constructor() { }
+  constructor(private ProjectSvc:ProjectService) { }
 
   ngOnInit(): void {
   }
 
   deleteProject(){
-    console.log("I CLICKED THE ICON");
+    this.ProjectSvc.deleteProject(this.cardId).subscribe();
   }
 }

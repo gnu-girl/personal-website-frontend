@@ -26,6 +26,11 @@ export class ProjectService {
     return this.http.post<boolean>('/api/projects/', JSON.stringify(project), httpOptions);
   }
 
+  // Create a delete http request (delete project on server)
+  deleteProject(id: number) {
+      return this.http.delete('/api/projects/'+id);
+  }
+
   // // Create a post http request (post/add product data to server)
   // addProduct(context: any) {
   //     return this.http.post(`$this.http_product_url`, JSON.stringify(context))
@@ -38,9 +43,5 @@ export class ProjectService {
   //         .map((response: Response) => response.json());
   // }
 
-  // // Create a delete http request (delete product to server)
-  // deleteProduct(id: number) {
-  //     return this.http.delete(`$this.http_product_url/${id}`)
-  //         .map((response: Response) => response.json());
-  // }
+  
 }

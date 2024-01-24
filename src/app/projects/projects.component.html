@@ -7,39 +7,8 @@
         *ngFor="let project of projectList$ | async"
         [cardTitle]="project.title"
         [cardCaption]="project.description"
+        [cardId]="project.id!"
       ></gg-card>
-      <!-- <gg-card
-        [cardTitle]="project$.title"
-        [cardCaption]="project$.description"
-      ></gg-card> -->
-      <!-- <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
-      <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
-      <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
-      <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
-      <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
-      <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card>
-      <gg-card
-        cardTitle="Can coffee make you a better developer?"
-        cardCaption="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-      ></gg-card> -->
     </div>
   </div>
 </div>
