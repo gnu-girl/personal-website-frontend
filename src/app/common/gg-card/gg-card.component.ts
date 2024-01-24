@@ -15,4 +15,7 @@ export class GgCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  deleteProject(){
+    console.log("I CLICKED THE ICON");
+  }
 }

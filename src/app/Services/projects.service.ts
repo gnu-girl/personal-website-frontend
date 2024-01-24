@@ -1,25 +1,29 @@
-// code for product.service.ts
-
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 import { IProject } from "../Structures/models";
-import { firstValueFrom } from 'rxjs';
 
 @Injectable()
 export class ProjectService {
   constructor(private http: HttpClient) {}
 
-  // Create a get http request (get product information in json format)
-  getAll(): Observable<IProject[]> {
+  /// Get all projects in db
+  getAllProjects(): Observable<IProject[]> {
     return this.http.get<IProject>('/api/projects').pipe(map((result:any) => result));
   }
 
-  getById(id: Number): any {
-    return this.http.get<IProject>('/api/projects/'+id).pipe(map((result:IProject) => {result
-      }
-    ))
+  getProjectById(id: Number): any {
+    return this.http.get<IProject>('/api/projects/'+id).pipe(map((result:IProject) => result));
+  }
+
+  addProject(project: IProject):Observable<boolean> {
+    const httpOptions = 
+    {
+        headers: new HttpHeaders({'Content-Type':'application/json'}),
+    }
+    console.log("PROJECT IS - ", JSON.stringify(project));
+    return this.http.post<boolean>('/api/projects/', JSON.stringify(project), httpOptions);
   }
 
   // // Create a post http request (post/add product data to server)

@@ -21,8 +21,9 @@ export class ProjectsComponent implements OnInit {
 
   ////////////////////////////////////////////////
   // Public Variables
-  projectList$ = this.projectSvc.getAll();
-  project$ = this.projectSvc.getById(2);
+  projectList$ = this.projectSvc.getAllProjects();
+  project$ = this.projectSvc.getProjectById(2);
+  buttonText = "+ Add";
 
   ////////////////////////////////////////////////
   // Public functions
